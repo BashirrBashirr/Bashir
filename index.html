@@ -7,21 +7,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Press+Start+2P&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Orbitron', sans-serif; /* Modern cyberpunk font */
+            font-family: 'Orbitron', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f9f9f9;
             color: #222;
             line-height: 1.6;
-            font-size: 16px; /* Uniform font size */
+            font-size: 16px;
         }
 
         header {
             position: relative;
             width: 100%;
-            height: 400px;
-            background: url('https://www.alternatehistory.com/forum/attachments/islamicstate-png.242614/') no-repeat center top;
-            background-size: cover;
+            height: 600px;
+            background: url('https://www.alternatehistory.com/forum/attachments/islamicstate-png.242614/') no-repeat center center;
+            background-size: contain;
+            background-position: center center;
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
         }
 
@@ -40,11 +41,11 @@
             margin: 0 auto;
             text-align: center;
             background-color: #fff;
-            margin-top: 120px; /* Increased space between sections */
+            margin-top: 120px;
         }
 
         .intro-text {
-            font-size: 16px; /* Equalized font size for content text */
+            font-size: 16px;
             color: #333;
             margin-bottom: 40px;
             max-width: 800px;
@@ -58,8 +59,8 @@
         .quote-container {
             background-color: #fff;
             padding: 20px 30px;
-            border: 2px solid #000; /* Black lines */
-            margin-top: 100px; /* Increased space between sections */
+            border: 2px solid #000;
+            margin-top: 100px;
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
             display: inline-block;
             width: 100%;
@@ -70,7 +71,7 @@
         }
 
         .quote {
-            font-size: 16px; /* Equalized font size */
+            font-size: 16px;
             color: #222;
             font-weight: 400;
             margin-bottom: 15px;
@@ -79,7 +80,7 @@
 
         .quote-arabic {
             font-family: 'Press Start 2P', cursive;
-            font-size: 20px; /* Increased size for Arabic text */
+            font-size: 20px;
             color: #222;
             font-weight: 500;
             margin-top: 20px;
@@ -87,75 +88,75 @@
         }
 
         .whatsapp-group {
-            background-color: #F4E832; /* Changed to Monster yellow color */
+            background-color: #F4E832;
             padding: 30px;
-            border: 2px solid #000; /* Black border */
-            margin-top: 100px; /* Increased space between sections */
+            border: 2px solid #000;
+            margin-top: 300px;
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
             text-align: center;
-            margin-bottom: 100px; /* To balance the spacing */
+            margin-bottom: 50px;
         }
 
         .whatsapp-link {
-            font-size: 16px; /* WhatsApp button font size */
-            color: #25D366; /* WhatsApp logo green color */
+            font-size: 16px;
+            color: #25D366;
             font-weight: 600;
             text-decoration: none;
             padding: 12px 25px;
-            border: 2px solid #000; /* Black border */
-            background-color: #000; /* Black background */
+            border: 2px solid #000;
+            background-color: #000;
             transition: all 0.3s ease;
             margin-top: 20px;
             display: inline-block;
-            border-radius: 0; /* Square edges */
+            border-radius: 0;
         }
 
         .whatsapp-link:hover {
-            background-color: #333; /* Darker black background on hover */
-            border: 2px solid #25D366; /* WhatsApp green border on hover */
-            color: #25D366; /* WhatsApp green text on hover */
+            background-color: #333;
+            border: 2px solid #25D366;
+            color: #25D366;
         }
 
         .administrators {
-            background-color: #00FF00; /* Fluorescent green background (like Monster drink) */
+            background-color: #00FF00;
             padding: 30px;
-            border: 2px solid #000; /* Black lines */
-            margin-top: 300px; /* Moved further down */
+            border: 2px solid #000;
+            margin-top: 600px; /* Move the green square more down */
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
             text-align: center;
-            margin-bottom: 100px; /* To balance the spacing */
-            max-width: 800px; /* Made the section smaller */
+            margin-bottom: 20px;
+            max-width: 800px;
             margin-left: auto;
             margin-right: auto;
         }
 
         .administrators h3 {
             font-family: 'Press Start 2P', cursive;
-            font-size: 18px; /* Title font size */
+            font-size: 18px;
             font-weight: 500;
             margin-bottom: 20px;
-            color: #000; /* Changed to full black for administrators title */
+            color: #000;
         }
 
         .admin-name {
-            font-size: 16px; /* Equalized font size for admin names */
+            font-size: 16px;
             font-weight: 400;
-            color: #000; /* Changed text to full black */
+            color: #000;
             margin-bottom: 15px;
             line-height: 1.8;
         }
 
         footer {
-            background-color: #000; /* Full black */
+            background-color: #000;
             color: #fff;
             text-align: center;
-            padding: 10px; /* Reduced padding for smaller footer */
+            padding: 10px;
             box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.1);
-            margin-top: 100px; /* Increased space between sections */
+            margin-top: 20px;
         }
 
         footer p {
-            font-size: 16px; /* Same size as intro text for footer */
+            font-size: 16px;
             margin-bottom: 10px;
         }
 
@@ -163,17 +164,16 @@
             color: #fff;
             text-decoration: none;
             opacity: 0.8;
-            font-size: 16px; /* Same font size for links in footer */
+            font-size: 16px;
         }
 
         .link:hover {
             text-decoration: underline;
         }
 
-        /* Responsive design */
         @media (max-width: 768px) {
             header {
-                height: 250px;
+                height: 350px;
             }
 
             header h1 {
@@ -189,7 +189,7 @@
             }
 
             .intro-text {
-                font-size: 16px; /* Slightly smaller for mobile */
+                font-size: 16px;
             }
 
             .whatsapp-group, .administrators {
@@ -216,7 +216,7 @@
     </header>
 
     <div class="content">
-        <p class="intro-text">Welcome to the "لا إِلهَ إِلاَّ الله" Salafiyya Blog, your online destination for authentic Islamic knowledge. Here, we provide a space for individuals who seek to deepen their understanding of the Qur'an and Sunnah, following the methodology of the Salaf. Join our community to engage with scholars, discuss key concepts, and grow in your faith. We also embrace the use of technology in accordance with Islamic values, making use of **robots and AI** for positive societal impact.</p>
+        <p class="intro-text">Welcome to the "لا إِلهَ إِلاَّ الله" Salafiyya Blog, your online destination for authentic Islamic knowledge. Here, we provide a space for individuals who seek to deepen their understanding of the Qur'an and Sunnah, following the methodology of the Salaf. Join our community to engage with scholars, discuss key concepts, and grow in your faith. We also embrace the use of technology in accordance with Islamic values, making use of robotics and AI for positive societal impact.</p>
 
         <div class="quote-container">
             <p class="quote">"The best of you are those who learn the Qur'an and teach it to others." <br> — Prophet Muhammad (PBUH)</p>
@@ -245,7 +245,7 @@
             <p class="admin-name">Shaykh Mohinul</p>
             <p class="admin-name">Shaykh Mukith Miah</p>
             <p class="admin-name">Shaykh Bashir</p>
-            <p class="admin-name">Shaykh Shuayb Al-Bangali</p> <!-- Added the new admin -->
+            <p class="admin-name">Shaykh Shuayb Al-Bangali</p>
         </div>
     </div>
 
@@ -255,3 +255,5 @@
     </footer>
 </body>
 </html>
+
+
