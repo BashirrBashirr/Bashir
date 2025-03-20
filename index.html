@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>لا إِلهَ إِلاَّ الله - Salafiyya Blog</title>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Spectral+SC:wght@400;600&display=swap" rel="stylesheet">
+    <title>لا إِلهَ إِلاَّ الله</title>
+    <!-- Use Orbitron for squared Latin text, Kufam for squared Arabic text -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Kufam:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Nunito', sans-serif;
+            font-family: 'Orbitron', sans-serif; /* Orbitron for the squared, cybernetic look for Latin text */
             margin: 0;
             padding: 0;
             background-color: #f9f9f9;
@@ -16,27 +17,21 @@
         }
 
         header {
-            background-color: #1e1e1e;
-            color: #fff;
-            text-align: center;
-            padding: 100px 20px;
+            position: relative;
+            width: 100%;
+            height: 500px;
+            background: url('https://www.alternatehistory.com/forum/attachments/islamicstate-png.242614/') no-repeat center top;
+            background-size: cover;
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
         }
 
         header h1 {
-            font-family: 'Spectral SC', serif;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             font-size: 3.5em;
-            font-weight: 600;
-            letter-spacing: 4px;
-            margin-bottom: 15px;
-        }
-
-        header h2 {
-            font-size: 1.6em;
-            font-weight: 400;
-            letter-spacing: 2px;
-            margin-top: 0;
-            opacity: 0.8;
+            color: transparent;
         }
 
         .content {
@@ -81,11 +76,12 @@
         }
 
         .quote-arabic {
+            font-family: 'Kufam', serif; /* Kufam for squared Arabic text */
             font-size: 1.6em;
             color: #333;
             font-weight: 600;
             margin-top: 20px;
-            text-align: center; /* Center the Arabic translation */
+            text-align: center;
         }
 
         .whatsapp-group {
@@ -126,7 +122,7 @@
         }
 
         .administrators h3 {
-            font-family: 'Spectral SC', serif;
+            font-family: 'Orbitron', sans-serif; /* Orbitron for squared font in headings */
             font-size: 2.5em;
             font-weight: 600;
             margin-bottom: 30px;
@@ -141,7 +137,7 @@
         }
 
         footer {
-            background-color: #1e1e1e;
+            background-color: #000000; /* Full black footer */
             color: #fff;
             text-align: center;
             padding: 25px;
@@ -161,12 +157,12 @@
 
         /* Responsive design */
         @media (max-width: 768px) {
-            header h1 {
-                font-size: 3em;
+            header {
+                height: 300px;
             }
 
-            header h2 {
-                font-size: 1.4em;
+            header h1 {
+                font-size: 2.5em;
             }
 
             .quote-container {
@@ -189,12 +185,11 @@
 </head>
 <body>
     <header>
-        <h1>لا إِلهَ إِلاَّ الله</h1>
-        <h2>Salafiyya Blog</h2>
+        <!-- The banner image is set as background -->
     </header>
 
     <div class="content">
-        <p class="intro-text">Welcome to the "لا إِلهَ إِلاَّ الله" Salafiyya Blog, your online destination for authentic Islamic knowledge. Here, we provide a space for individuals who seek to deepen their understanding of the Qur'an and Sunnah, following the methodology of the Salaf. Join our community to engage with scholars, discuss key concepts, and grow in your faith.</p>
+        <p class="intro-text">Welcome to the "لا إِلهَ إِلاَّ الله" Salafiyya Blog, your online destination for authentic Islamic knowledge. Here, we provide a space for individuals who seek to deepen their understanding of the Qur'an and Sunnah, following the methodology of the Salaf. Join our community to engage with scholars, discuss key concepts, and grow in your faith. We also embrace the use of technology in accordance with Islamic values, making use of **robots and AI** for positive societal impact.</p>
 
         <div class="quote-container">
             <p class="quote">"The best of you are those who learn the Qur'an and teach it to others." <br> — Prophet Muhammad (PBUH)</p>
@@ -227,11 +222,8 @@
     </div>
 
     <footer>
-        <p>&copy; 2025 <a href="https://nggas.minecraftr.us/" class="link" target="_blank">لا إِلهَ إِلاَّ الله</a>. All rights reserved.</p>
+        <p>&copy; 2025 <a href="https://www.example.com" class="link" target="_blank">لا إِلهَ إِلاَّ الله</a>. All rights reserved.</p>
         <p>Powered by <a href="https://github.com" class="link" target="_blank">GitHub</a> and <a href="https://chat.openai.com" class="link" target="_blank">ChatGPT</a></p>
     </footer>
 </body>
 </html>
-
-
-
