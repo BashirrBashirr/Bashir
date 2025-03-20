@@ -1,285 +1,229 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>لا إِلهَ إِلاَّ الله</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Press+Start+2P&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <title>ፒዛ ኢትዮጵያ | Ethiopian Pizza</title>
     <style>
-        body {
-            font-family: 'Orbitron', sans-serif;
+        /* Reset and base styles */
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
-            color: #222;
-            line-height: 1.2;
-            font-size: 12px; /* Slightly smaller font size */
-            position: relative;
-            min-height: 100vh;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f8f8;
+            color: #fff;
+            overflow-x: hidden;
+            background: linear-gradient(135deg, #009944 50%, #ff4f00 50%); /* Ethiopian flag colors */
         }
 
+        /* Header Section */
         header {
+            background: linear-gradient(45deg, #fcb900, #ff4f00, #009944);
+            padding: 150px 20px;
+            text-align: center;
+            color: #fff;
             position: relative;
-            width: 100%;
-            height: 220px; /* Adjusted height to show top 2/3rds of the banner */
-            background: url('https://www.alternatehistory.com/forum/attachments/islamicstate-png.242614/') no-repeat center center;
-            background-color: #000;
+            background-image: url('https://images.unsplash.com/photo-1517694728183-e5d4470c08b4');
             background-size: cover;
-            background-position: 0 33%; /* Positioned to show top 2/3rds of the image */
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            background-position: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
 
         header h1 {
-            position: absolute;
-            top: 10%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 1.3em; /* Slightly smaller font size */
-            color: transparent;
+            font-size: 6rem;
+            text-transform: uppercase;
+            text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
         }
 
-        .content {
-            padding: 10px 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-            text-align: center;
-            background-color: #fff;
-            margin-top: 100px; /* Reduced margin to bring it closer */
-            padding-bottom: 30px; /* Reduced padding */
-        }
-
-        .intro-text {
-            font-size: 11px; /* Smaller font size */
-            color: #333;
-            margin-bottom: 20px; /* Reduced margin */
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: justify;
-            opacity: 0.8;
-            line-height: 1.3; /* Reduced line-height */
-        }
-
-        .quote-container {
-            background-color: #fff;
-            padding: 10px 20px;
-            border: 3px solid #000;
-            margin-top: 30px; /* Reduced margin */
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-            display: inline-block;
-            width: 100%;
-            text-align: left;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .quote {
-            font-size: 11px; /* Smaller font size */
-            color: #222;
-            font-weight: 400;
-            margin-bottom: 10px; /* Reduced margin */
-            line-height: 1.3;
-        }
-
-        .quote-arabic {
-            font-family: 'Press Start 2P', cursive;
-            font-size: 13px; /* Slightly smaller font size */
-            color: #222;
-            font-weight: 500;
-            margin-top: 10px; /* Reduced margin */
-            text-align: center;
-        }
-
-        .whatsapp-group {
-            background-color: #F4E832;
-            padding: 15px;
-            border: 2px solid #000;
-            margin-top: 500px; /* Reduced margin */
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            margin-bottom: 30px; /* Reduced margin */
-        }
-
-        .whatsapp-link {
-            font-size: 9px; /* Smaller font size */
-            color: #25D366;
+        header p {
+            font-size: 2rem;
             font-weight: 600;
-            text-decoration: none;
-            padding: 8px 15px; /* Reduced padding */
-            border: 2px solid #000;
-            background-color: #000;
-            transition: all 0.3s ease;
-            margin-top: 10px;
-            display: inline-block;
-            border-radius: 0;
+            margin-top: 15px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         }
 
-        .whatsapp-link:hover {
-            background-color: #333;
-            border: 2px solid #25D366;
-            color: #25D366;
+        .cta-button {
+            background-color: #003d21;
+            padding: 20px 70px;
+            font-size: 2rem;
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            text-transform: uppercase;
+            cursor: pointer;
+            letter-spacing: 4px;
+            margin-top: 25px;
+            transition: all 0.3s ease-in-out;
         }
 
-        .administrators {
-            background-color: #00FF00;
-            padding: 15px;
-            border: 2px solid #000;
-            margin-top: 800px; /* Reduced margin */
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        .cta-button:hover {
+            background-color: #ff4f00;
+        }
+
+        /* Menu Section */
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            padding: 80px 20px;
+            margin-top: 40px;
+            background-color: #f5f5f5;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-item {
+            background-color: #fff;
+            width: 300px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
             text-align: center;
-            margin-bottom: 20px;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
+            transition: 0.3s ease-in-out;
+            background-color: #f5f5f5;
+            position: relative;
         }
 
-        .administrators h3 {
-            font-family: 'Press Start 2P', cursive;
-            font-size: 14px; /* Slightly smaller font size */
-            font-weight: 500;
-            margin-bottom: 10px; /* Reduced margin */
-            color: #000;
+        .menu-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-bottom: 5px solid #fcb900;
         }
 
-        .admin-name {
-            font-size: 11px; /* Smaller font size */
-            font-weight: 400;
-            color: #000;
-            margin-bottom: 8px; /* Reduced margin */
-            line-height: 1.3;
+        .menu-item h3 {
+            font-size: 2.5rem;
+            color: #003d21;
+            margin-top: 15px;
+            font-weight: 700;
+            letter-spacing: 3px;
         }
 
+        .menu-item p {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+            background-color: #fff7e6; /* Soft yellow background on hover */
+        }
+
+        .menu-item .ethiopian-emoji {
+            font-size: 2.5rem;
+            color: #ff4f00;
+        }
+
+        /* Footer Section */
         footer {
-            background-color: #000;
+            background-color: #003d21;
             color: #fff;
             text-align: center;
-            padding: 5px;
-            font-family: 'Orbitron', sans-serif;
-            font-size: 11px; /* Slightly smaller font size */
-            line-height: 1.2;
-            margin-top: 10px;
-        }
-
-        footer p {
-            font-size: 11px; /* Smaller font size */
-            margin-bottom: 5px; /* Reduced margin */
+            padding: 60px 20px;
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: 4px;
+            border-top: 5px solid #fcb900;
         }
 
         footer a {
-            color: #fff;
+            color: #fcb900;
             text-decoration: none;
-            opacity: 0.8;
-            font-size: 11px; /* Smaller font size */
+            font-weight: 700;
         }
 
         footer a:hover {
             text-decoration: underline;
         }
 
-        .designed-text {
-            font-size: 11px; /* Smaller font size */
-            font-weight: normal;
-            color: #000;
-            text-align: center;
-            margin-top: 2000px; /* Reduced margin */
-            margin-bottom: 0;
+        /* Modern Typography */
+        h1, h2, h3, h4, p {
+            font-family: 'Poppins', sans-serif;
         }
 
-        .designed-text strong {
-            font-weight: bold;
+        /* Floating Icons and Modern Effect */
+        .icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 8rem;
+            color: #ff4f00;
+            z-index: -1;
+            opacity: 0.15;
+            transition: all 0.3s ease;
         }
 
-        .link {
-            color: #fff;
-            text-decoration: none;
+        .icon:hover {
+            opacity: 0.6;
+            transform: translate(-50%, -50%) scale(1.1);
         }
 
-        @media (max-width: 768px) {
-            header {
-                height: 180px; /* Reduced header height for smaller screens */
-            }
-
+        /* Mobile Responsiveness */
+        @media screen and (max-width: 768px) {
             header h1 {
-                font-size: 1.1em;
+                font-size: 3rem;
             }
 
-            .quote-container {
-                padding: 10px;
+            .cta-button {
+                padding: 15px 30px;
+                font-size: 1.5rem;
             }
 
-            .content {
-                padding: 10px;
-            }
-
-            .intro-text {
-                font-size: 11px;
-            }
-
-            .whatsapp-group, .administrators {
-                padding: 10px;
-            }
-
-            .whatsapp-link {
-                padding: 6px 12px;
-            }
-
-            .admin-name {
-                font-size: 10px;
-            }
-
-            .link {
-                font-size: 10px;
+            .menu-item {
+                width: 280px;
             }
         }
     </style>
 </head>
 <body>
+
+    <!-- Header Section -->
     <header>
-        <!-- Banner image set as background -->
+        <h1>ፒዛ ኢትዮጵያ 🍕</h1>
+        <p>በጣም በስላምታ ፒዛ ይሁን!</p>
+        <button class="cta-button">አሁን ማሳሰቢያ</button>
+        <div class="icon">🍕</div>
     </header>
 
-    <div class="content">
-        <p class="intro-text">
-            Welcome to the "لا إِلهَ إِلاَّ الله" Salafiyya Blog, your online destination for authentic Islamic knowledge. Here, we provide a space for individuals who seek to deepen their understanding of the Qur'an and Sunnah, following the methodology of the Salaf. Join our community to engage with scholars, discuss key concepts, and grow in your faith. We also embrace the use of technology in accordance with Islamic values, making use of robotics and AI for positive societal impact.
-        </p>
-
-        <div class="quote-container">
-            <p class="quote">"The best of you are those who learn the Qur'an and teach it to others." <br> — Prophet Muhammad (PBUH)</p>
-            <p class="quote-arabic">"خيركم من تعلم القرآن وعلَّمه." <br> — النبي محمد صلى الله عليه وسلم</p>
+    <!-- Menu Section -->
+    <section class="menu">
+        <!-- Menu Item 1 -->
+        <div class="menu-item">
+            <img src="https://www.recetasnestle.cl/sites/default/files/styles/recipe_detail_desktop_new/public/srh_recipes/15d4201021f9dd2fec574397d9713cfc.webp?itok=wDDa_uH-" alt="Ethiopian Pizza">
+            <h3>በባህላዊ ፒዛ 🍕</h3>
+            <p>በባህላዊ እንቁላል እና የኢትዮጵያ ቅባት</p>
+            <div class="ethiopian-emoji">🇪🇹 🍕</div>
         </div>
 
-        <div class="quote-container">
-            <p class="quote">"The greatest of knowledge is the knowledge of Allah and His Messenger." <br> — Ibn Taymiyyah</p>
-            <p class="quote-arabic">"أعظم العلم هو علم الله ورسوله." <br> — ابن تيمية</p>
+        <!-- Menu Item 2 -->
+        <div class="menu-item">
+            <img src="https://www.recetasnestle.cl/sites/default/files/styles/recipe_detail_desktop_new/public/srh_recipes/15d4201021f9dd2fec574397d9713cfc.webp?itok=wDDa_uH-" alt="Ethiopian Pizza">
+            <h3>እንቁላል ፒዛ 🍳</h3>
+            <p>በባህላዊ ፒዛ እና እንቁላል በሰላምታ</p>
+            <div class="ethiopian-emoji">🇪🇹 🍳</div>
         </div>
 
-        <div class="whatsapp-group">
-            <h3>Join Our WhatsApp Group</h3>
-            <p>Be part of our growing community where you can ask questions, share knowledge, and participate in enriching discussions. Click the link below to join the group.</p>
-            <a href="https://chat.whatsapp.com/FU8Q35VEUYFL2pd88q4ThV" class="whatsapp-link" target="_blank">Join the WhatsApp Group</a>
+        <!-- Menu Item 3 -->
+        <div class="menu-item">
+            <img src="https://www.recetasnestle.cl/sites/default/files/styles/recipe_detail_desktop_new/public/srh_recipes/15d4201021f9dd2fec574397d9713cfc.webp?itok=wDDa_uH-" alt="Ethiopian Pizza">
+            <h3>ጣፋጭ ፒዛ 🍅</h3>
+            <p>በስላምታ ማር ፒዛ</p>
+            <div class="ethiopian-emoji">🇪🇹 🍅</div>
         </div>
+    </section>
 
-        <div class="administrators">
-            <h3>Meet Our Administrators</h3>
-            <p>Our forum is guided by a team of scholars dedicated to spreading knowledge and ensuring authentic teachings:</p>
-            <p class="admin-name">Shaykh Hamud</p>
-            <p class="admin-name">Shaykh Farid</p>
-            <p class="admin-name">Shaykh Imran</p>
-            <p class="admin-name">Shaykh DJ Armi</p>
-            <p class="admin-name">Shaykh Faisal</p>
-            <p class="admin-name">Shaykh Mohinul</p>
-            <p class="admin-name">Shaykh Mukith Miah</p>
-            <p class="admin-name">Shaykh Bashir</p>
-            <p class="admin-name">Shaykh Shuayb Al-Bangali</p>
-        </div>
-
-        <p class="designed-text">Made by <strong>Bashir Bashir</strong>, world's #1 designer</p>
-    </div>
-
+    <!-- Footer Section -->
     <footer>
-        <p>© 2025 <a href="https://nggas.minecraftr.us/" class="link" target="_blank"><strong>لا إِلهَ إِلاَّ الله</strong></a>. All rights reserved.</p>
-        <p>Powered by <a href="https://github.com/" class="link" target="_blank">GitHub</a> and <a href="https://openai.com/chatgpt" class="link" target="_blank">ChatGPT</a></p>
+        <p>በባህላዊ ፒዛ ስለ አሁን ማሳሰቢያ</p>
+        <p><a href="#">አሁን በማሳሰብ ይሁን!</a></p>
     </footer>
+
 </body>
 </html>
