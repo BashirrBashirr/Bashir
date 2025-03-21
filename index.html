@@ -3,210 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ፒዛ ኢትዮጵያ | Ethiopian Pizza</title>
+    <title>BashirAI</title>
+    <meta name="description" content="Compare ChatGPT and DeepSeek responses side by side, and explore other AI chat models. Discover insightful Amharic quotes.">
     <style>
-        /* Base Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: 'Roboto', sans-serif;
-            background: #fff;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
             color: #333;
-            overflow-x: hidden;
-        }
-
-        /* Header Section */
-        header {
-            background-color: #009944; /* Green color of the Ethiopian flag */
-            text-align: center;
-            padding: 100px 20px;
-            color: #fff;
-            position: relative;
-            overflow: hidden;
-        }
-
-        header h1 {
-            font-size: 4rem;
-            text-transform: uppercase;
-            letter-spacing: 5px;
-            font-weight: 900;
-            margin-bottom: 10px;
-            color: #fcb900; /* Yellow color of the Ethiopian flag */
-        }
-
-        header p {
-            font-size: 1.5rem;
-            font-weight: 500;
-            color: #ff4f00; /* Red color of the Ethiopian flag */
-            margin-top: 20px;
-        }
-
-        .cta-button {
-            background-color: #ff4f00; /* Red for call to action */
-            padding: 20px 50px;
-            font-size: 1.5rem;
-            color: #fff;
-            border: none;
-            border-radius: 50px;
-            text-transform: uppercase;
-            cursor: pointer;
-            letter-spacing: 3px;
-            margin-top: 30px;
-            transition: all 0.3s ease;
-        }
-
-        .cta-button:hover {
-            background-color: #fcb900;
-            color: #009944;
-        }
-
-        /* Menu Section */
-        .menu {
             display: flex;
-            justify-content: center;
-            gap: 40px;
-            flex-wrap: wrap;
-            padding: 80px 20px;
-            background-color: #f7f7f7;
-        }
-
-        .menu-item {
-            width: 300px;
-            background-color: #fcb900;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
             padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            overflow-y: auto;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
             text-align: center;
-            transition: transform 0.3s ease-in-out;
-            position: relative;
+            margin-bottom: 20px;
         }
-
-        .menu-item img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 10px;
-            transition: opacity 0.3s ease;
-        }
-
-        .menu-item h3 {
-            font-size: 2rem;
-            font-weight: 700;
-            color: #333;
-            margin-top: 20px;
-        }
-
-        .menu-item p {
-            font-size: 1.2rem;
-            font-weight: 400;
-            color: #555;
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 6px;
+            font-size: 16px;
             margin-top: 10px;
         }
-
-        .menu-item:hover {
-            transform: scale(1.05);
+        button:hover {
+            background-color: #0056b3;
         }
-
-        /* Footer Section */
         footer {
-            background-color: #009944;
-            color: #fff;
+            margin-top: 100px; /* Increased space before the footer */
             text-align: center;
-            padding: 40px 20px;
-            font-size: 1.4rem;
-            font-weight: 700;
+            font-size: 14px;
+            color: #555;
         }
-
-        footer a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* Ethiopian Emojis & Icons */
-        .ethiopian-emoji {
-            font-size: 3rem;
-            color: #ff4f00;
-            margin-top: 20px;
-        }
-
-        .icon {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 6rem;
-            color: #fcb900;
-            z-index: -1;
-            opacity: 0.1;
-        }
-
-        /* Responsive Design */
-        @media screen and (max-width: 768px) {
-            header h1 {
-                font-size: 3rem;
-            }
-
-            .cta-button {
-                padding: 15px 30px;
-                font-size: 1.2rem;
-            }
-
-            .menu-item {
-                width: 250px;
-            }
+        h1 {
+            margin-bottom: 60px; /* Increased space under the main title */
         }
     </style>
 </head>
 <body>
+    <h1>BashirAI</h1>
 
-    <!-- Header Section -->
-    <header>
-        <h1>ፒዛ ኢትዮጵያ 🍕</h1>
-        <p>በጣም በስላምታ ፒዛ ይሁን!</p>
-        <button class="cta-button">አሁን በማሳሰብ ይሁን!</button>
-        <div class="icon">🍕</div>
-    </header>
+    <div class="container">
+        <h2>ChatGPT Chat</h2>
+        <p>Click below to chat with ChatGPT.</p>
+        <button onclick="window.open('https://chat.openai.com', '_blank')">Open ChatGPT</button>
+    </div>
 
-    <!-- Menu Section -->
-    <section class="menu">
-        <!-- Menu Item 1 -->
-        <div class="menu-item">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7s93yTTluzAyV9xxEEWcE6JMJIJ6beUG_vg&s" alt="Ethiopian Pizza">
-            <h3>በባህላዊ ፒዛ 🍕</h3>
-            <p>በባህላዊ እንቁላል እና የኢትዮጵያ ቅባት</p>
-            <div class="ethiopian-emoji">🇪🇹 🍕 🥘</div>
-        </div>
+    <div class="container">
+        <h2>DeepSeek Chat</h2>
+        <p>Click below to chat with DeepSeek.</p>
+        <button onclick="window.open('https://chat.deepseek.com', '_blank')">Open DeepSeek</button>
+    </div>
 
-        <!-- Menu Item 2 -->
-        <div class="menu-item">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7s93yTTluzAyV9xxEEWcE6JMJIJ6beUG_vg&s" alt="Ethiopian Pizza">
-            <h3>እንቁላል ፒዛ 🍳</h3>
-            <p>በባህላዊ ፒዛ እና እንቁላል በሰላምታ</p>
-            <div class="ethiopian-emoji">🇪🇹 🍳 🌶</div>
-        </div>
+    <div class="container">
+        <h2>Perplexity AI</h2>
+        <p>Click below to chat with Perplexity AI.</p>
+        <button onclick="window.open('https://www.perplexity.ai', '_blank')">Open Perplexity AI</button>
+    </div>
 
-        <!-- Menu Item 3 -->
-        <div class="menu-item">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7s93yTTluzAyV9xxEEWcE6JMJIJ6beUG_vg&s" alt="Ethiopian Pizza">
-            <h3>ጣፋጭ ፒዛ 🍅</h3>
-            <p>በስላምታ ማር ፒዛ</p>
-            <div class="ethiopian-emoji">🇪🇹 🍅 🥗</div>
-        </div>
-    </section>
+    <div class="container">
+        <h2>Microsoft Copilot</h2>
+        <p>Click below to chat with Microsoft Copilot (formerly Bing Chat).</p>
+        <button onclick="window.open('https://www.bing.com/chat', '_blank')">Open Microsoft Copilot</button>
+    </div>
 
-    <!-- Footer Section -->
+    <div class="container">
+        <h2>Replika</h2>
+        <p>Click below to chat with Replika, your AI companion.</p>
+        <button onclick="window.open('https://replika.ai', '_blank')">Open Replika</button>
+    </div>
+
+    <div class="container">
+        <h2>Islam and AI</h2>
+        <p>Click below to chat with Islam and AI for Islamic knowledge.</p>
+        <button onclick="window.open('https://www.islamandai.com', '_blank')">Open Islam and AI</button>
+    </div>
+
+    <div class="container">
+        <h2>Query Quran AI</h2>
+        <p>Click below to explore Quranic knowledge with Query Quran AI.</p>
+        <button onclick="window.open('https://www.queryquran.ai', '_blank')">Open Query Quran AI</button>
+    </div>
+
+    <div class="container">
+        <h2>Sheikh GPT</h2>
+        <p>Click below to chat with Sheikh GPT for Islamic guidance.</p>
+        <button onclick="window.open('https://www.sheikhgpt.com', '_blank')">Open Sheikh GPT</button>
+    </div>
+
+    <div class="container">
+        <h2>Zen GPT</h2>
+        <p>Click below to chat with Zen GPT for mindfulness and meditation.</p>
+        <button onclick="window.open('https://www.zengpt.com', '_blank')">Open Zen GPT</button>
+    </div>
+
+    <div class="container">
+        <h2>Samurai (Character.ai)</h2>
+        <p>Click below to chat with a Samurai from Character.ai.</p>
+        <button onclick="window.open('https://www.character.ai/samurai', '_blank')">Open Samurai</button>
+    </div>
+
+    <div class="container">
+        <h2>Mansa Musa (Character.ai)</h2>
+        <p>Click below to chat with Mansa Musa from Character.ai.</p>
+        <button onclick="window.open('https://www.character.ai/mansa-musa', '_blank')">Open Mansa Musa</button>
+    </div>
+
     <footer>
-        <p>በባህላዊ ፒዛ ስለ አሁን ማሳሰቢያ</p>
-        <p><a href="#">አሁን በማሳሰብ ይሁን!</a></p>
+        <p>ሰው ሲያወራ ይሻላል፣ ሲያድም ይሻላል።<br><em>(A person improves by speaking, but even more by listening.)</em></p>
+        <p>አንደበቴ ብዬ አልተማርሁ፣ ጆሮዬ ብዬ ተማርሁ።<br><em>(I did not learn by speaking; I learned by listening.)</em></p>
+        <p>ሰብ እንተዘይተነብር ኣይትፈልጥ።<br><em>(If you don’t live with people, you won’t understand them.)</em></p>
     </footer>
-
 </body>
 </html>
