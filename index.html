@@ -17,7 +17,7 @@
             justify-content: flex-start;
             min-height: 100vh;
             margin: 0;
-            padding: 200px 20px 20px; /* Moved everything way more down from navbar */
+            padding: 300px 20px 20px; /* Increased padding-top to add space between title and navigator */
             overflow-y: auto;
         }
 
@@ -55,7 +55,7 @@
         }
 
         footer {
-            margin-top: 200px; /* Moved footer way more down */
+            margin-top: 600px; /* Increased to double the new distance (300px -> 600px) */
             text-align: center;
             font-size: 14px;
             color: #555;
@@ -63,7 +63,7 @@
         }
 
         h1 {
-            margin-bottom: 200px; /* Added space between title and first container */
+            margin-bottom: 300px; /* Increased space between title and first container */
             margin-top: 0;
             font-size: 3rem;
             color: #007bff;
@@ -91,6 +91,26 @@
 <body>
     <h1>BashirAI</h1>
 
+    <!-- Islamic AIs first -->
+    <div class="container">
+        <h2>Sheikh GPT</h2>
+        <p>Click below to chat with Sheikh GPT for Islamic guidance.</p>
+        <button onclick="window.open('https://sheikhgpt.com', '_blank')">Open Sheikh GPT</button>
+    </div>
+
+    <div class="container">
+        <h2>Query Quran AI</h2>
+        <p>Click below to explore the Quran with AI-powered insights.</p>
+        <button onclick="window.open('https://queryquran.com', '_blank')">Open Query Quran AI</button>
+    </div>
+
+    <div class="container">
+        <h2>Islam & AI</h2>
+        <p>Click below to explore the intersection of Islam and AI.</p>
+        <button onclick="window.open('https://islamandai.com', '_blank')">Open Islam & AI</button>
+    </div>
+
+    <!-- Other AIs -->
     <div class="container">
         <h2>ChatGPT Chat</h2>
         <p>Click below to chat with ChatGPT.</p>
@@ -122,24 +142,6 @@
     </div>
 
     <div class="container">
-        <h2>Islam & AI</h2>
-        <p>Click below to explore the intersection of Islam and AI.</p>
-        <button onclick="window.open('https://islamandai.com', '_blank')">Open Islam & AI</button>
-    </div>
-
-    <div class="container">
-        <h2>Query Quran AI</h2>
-        <p>Click below to explore the Quran with AI-powered insights.</p>
-        <button onclick="window.open('https://queryquran.com', '_blank')">Open Query Quran AI</button>
-    </div>
-
-    <div class="container">
-        <h2>Sheikh GPT</h2>
-        <p>Click below to chat with Sheikh GPT for Islamic guidance.</p>
-        <button onclick="window.open('https://sheikhgpt.com', '_blank')">Open Sheikh GPT</button>
-    </div>
-
-    <div class="container">
         <h2>Zen GPT</h2>
         <p>Click below to chat with Zen GPT for mindfulness and wisdom.</p>
         <button onclick="window.open('https://zengpt.com', '_blank')">Open Zen GPT</button>
@@ -163,6 +165,19 @@
         <button onclick="window.open('https://grok.ai', '_blank')">Open Grok</button>
     </div>
 
+    <div class="container">
+        <h2>GTA San Andreas (Character.ai)</h2>
+        <p>Click below to chat with GTA San Andreas from Character.ai.</p>
+        <button onclick="window.open('https://character.ai/gta-san-andreas', '_blank')">Open GTA San Andreas</button>
+    </div>
+
+    <div class="container">
+        <h2>Buddha (Character.ai)</h2>
+        <p>Click below to chat with Buddha from Character.ai.</p>
+        <button onclick="window.open('https://character.ai/buddha', '_blank')">Open Buddha</button>
+    </div>
+
+    <!-- Footer with corrected Amharic characters -->
     <footer>
         <p>ሰው ሲያወራ ይሻላል፣ ሲያድም ይሻላል።<br><em>(A person improves by speaking, but even more by listening.)</em></p>
         <p>አንደበቴ ብዬ አልተማርሁ፣ ጆሮዬ ብዬ ተማርሁ።<br><em>(I did not learn by speaking; I learned by listening.)</em></p>
