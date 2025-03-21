@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BashirAI</title>
     <meta name="description" content="Compare ChatGPT and DeepSeek responses side by side, and explore other AI chat models. Discover insightful Amharic quotes.">
+    <!-- Importing Poppins font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -16,55 +18,66 @@
             justify-content: flex-start;
             min-height: 100vh;
             margin: 0;
-            padding: 60px 20px; /* Increased overall padding for more breathing room */
+            padding: 80px 20px; /* Massive overall padding for spaciousness */
             overflow-y: auto;
         }
         .container {
             background: white;
-            padding: 30px; /* Increased padding for better internal spacing */
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            width: 400px;
+            padding: 40px; /* Increased padding for a spacious feel */
+            border-radius: 16px; /* Slightly larger radius for modernity */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Softer, larger shadow */
+            width: 450px; /* Slightly wider containers */
             text-align: center;
-            margin-bottom: 40px; /* Increased space between containers */
+            margin-bottom: 50px; /* Massive space between containers */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+        }
+        .container:hover {
+            transform: translateY(-5px); /* Subtle lift effect on hover */
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
         }
         button {
             background-color: #007bff;
             color: white;
             border: none;
-            padding: 12px 20px;
+            padding: 14px 24px; /* Larger button padding */
             cursor: pointer;
-            border-radius: 6px;
+            border-radius: 8px; /* Slightly rounded buttons */
             font-size: 16px;
-            margin-top: 20px; /* Increased space above buttons */
-            transition: background-color 0.3s ease;
+            margin-top: 25px; /* More space above buttons */
+            transition: background-color 0.3s ease, transform 0.2s ease;
         }
         button:hover {
             background-color: #0056b3;
+            transform: scale(1.05); /* Slight button scale on hover */
         }
         footer {
-            margin-top: 120px; /* Way more space before the footer */
+            margin-top: 150px; /* Massive space before the footer */
             text-align: center;
             font-size: 14px;
             color: #555;
-            padding: 30px 0; /* Increased footer padding */
+            padding: 40px 0; /* Increased footer padding */
             border-top: 1px solid #eee; /* Subtle top border for separation */
         }
         h1 {
-            margin-bottom: 80px; /* Way more space after the main title */
-            font-size: 3rem; /* Larger title for better hierarchy */
+            margin-bottom: 100px; /* Massive space after the main title */
+            font-size: 3.5rem; /* Larger title for impact */
             color: #007bff; /* Matching the button color */
-            font-weight: 600; /* Slightly bolder title */
+            font-family: 'Poppins', sans-serif; /* Modern font for the title */
+            font-weight: 600; /* Bold weight for emphasis */
+            letter-spacing: -1px; /* Slightly tighter letter spacing */
         }
         h2 {
-            margin-bottom: 20px; /* Space under section headings */
-            font-size: 1.75rem; /* Slightly larger headings */
+            margin-bottom: 25px; /* Space under section headings */
+            font-size: 2rem; /* Larger headings */
             color: #333;
+            font-family: 'Poppins', sans-serif; /* Modern font for headings */
+            font-weight: 500; /* Medium weight for headings */
         }
         p {
-            margin-bottom: 20px; /* Space under paragraphs */
+            margin-bottom: 25px; /* Space under paragraphs */
             color: #555;
-            line-height: 1.6; /* Improved line height for readability */
+            line-height: 1.8; /* Improved line height for readability */
+            font-size: 1rem; /* Slightly larger paragraph text */
         }
     </style>
 </head>
