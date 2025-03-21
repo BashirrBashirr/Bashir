@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BashirAI</title>
     <meta name="description" content="Compare ChatGPT and DeepSeek responses side by side, and explore other AI chat models. Discover insightful Amharic quotes.">
-    <!-- Importing Poppins font from Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <style>
         body {
@@ -18,23 +17,23 @@
             justify-content: flex-start;
             min-height: 100vh;
             margin: 0;
-            padding: 40px 20px 20px; /* Adjusted padding */
+            padding: 200px 20px 20px; /* Moved everything way more down from navbar */
             overflow-y: auto;
         }
 
         .container {
             background: white;
-            padding: 30px; /* Adjusted padding for a more balanced feel */
-            border-radius: 12px; /* Slightly smaller border-radius */
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Softer shadow */
-            width: 400px; /* Reduced width for a better fit */
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            width: 400px;
             text-align: center;
-            margin-bottom: 30px; /* Reduced space between containers */
+            margin-bottom: 40px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .container:hover {
-            transform: translateY(-5px); /* Subtle lift effect */
+            transform: translateY(-5px);
             box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
         }
 
@@ -42,31 +41,31 @@
             background-color: #007bff;
             color: white;
             border: none;
-            padding: 12px 20px; /* Adjusted padding for better proportion */
+            padding: 12px 20px;
             cursor: pointer;
             border-radius: 8px;
             font-size: 16px;
-            margin-top: 20px; /* Reduced margin to close the gap */
+            margin-top: 20px;
             transition: background-color 0.3s ease, transform 0.2s ease;
         }
 
         button:hover {
             background-color: #0056b3;
-            transform: scale(1.05); /* Slight button scale on hover */
+            transform: scale(1.05);
         }
 
         footer {
-            margin-top: 400px; /* Pushed the footer way further down */
+            margin-top: 200px; /* Moved footer way more down */
             text-align: center;
             font-size: 14px;
             color: #555;
-            padding: 20px 0; /* Adjusted footer padding */
+            padding: 20px 0;
         }
 
         h1 {
-            margin-bottom: 300px; /* Pushed the title further down */
-            margin-top: 300px; /* Pushed the title further down */
-            font-size: 3rem; /* Adjusted font-size */
+            margin-bottom: 5px; /* Sticking BashirAI to ChatGPT Chat */
+            margin-top: 0;
+            font-size: 3rem;
             color: #007bff;
             font-family: 'Poppins', sans-serif;
             font-weight: 600;
@@ -74,15 +73,15 @@
         }
 
         h2 {
-            margin-bottom: 15px; /* Reduced space under headings */
-            font-size: 1.8rem; /* Adjusted font size */
+            margin-bottom: 15px;
+            font-size: 1.8rem;
             color: #333;
             font-family: 'Poppins', sans-serif;
             font-weight: 500;
         }
 
         p {
-            margin-bottom: 20px; /* Adjusted space under paragraphs */
+            margin-bottom: 20px;
             color: #555;
             line-height: 1.6;
             font-size: 1rem;
@@ -116,48 +115,6 @@
         <button onclick="window.open('https://www.bing.com/chat', '_blank')">Open Microsoft Copilot</button>
     </div>
 
-    <div class="container">
-        <h2>Replika</h2>
-        <p>Click below to chat with Replika, your AI companion.</p>
-        <button onclick="window.open('https://replika.ai', '_blank')">Open Replika</button>
-    </div>
-
-    <div class="container">
-        <h2>Islam and AI</h2>
-        <p>Click below to chat with Islam and AI for Islamic knowledge.</p>
-        <button onclick="window.open('https://www.islamandai.com', '_blank')">Open Islam and AI</button>
-    </div>
-
-    <div class="container">
-        <h2>Query Quran AI</h2>
-        <p>Click below to explore Quranic knowledge with Query Quran AI.</p>
-        <button onclick="window.open('https://www.queryquran.ai', '_blank')">Open Query Quran AI</button>
-    </div>
-
-    <div class="container">
-        <h2>Sheikh GPT</h2>
-        <p>Click below to chat with Sheikh GPT for Islamic guidance.</p>
-        <button onclick="window.open('https://www.sheikhgpt.com', '_blank')">Open Sheikh GPT</button>
-    </div>
-
-    <div class="container">
-        <h2>Zen GPT</h2>
-        <p>Click below to chat with Zen GPT for mindfulness and meditation.</p>
-        <button onclick="window.open('https://www.zengpt.com', '_blank')">Open Zen GPT</button>
-    </div>
-
-    <div class="container">
-        <h2>Samurai (Character.ai)</h2>
-        <p>Click below to chat with a Samurai from Character.ai.</p>
-        <button onclick="window.open('https://www.character.ai/samurai', '_blank')">Open Samurai</button>
-    </div>
-
-    <div class="container">
-        <h2>Mansa Musa (Character.ai)</h2>
-        <p>Click below to chat with Mansa Musa from Character.ai.</p>
-        <button onclick="window.open('https://www.character.ai/mansa-musa', '_blank')">Open Mansa Musa</button>
-    </div>
-
     <footer>
         <p>ሰው ሲያወራ ይሻላል፣ ሲያድም ይሻላል።<br><em>(A person improves by speaking, but even more by listening.)</em></p>
         <p>አንደበቴ ብዬ አልተማርሁ፣ ጆሮዬ ብዬ ተማርሁ።<br><em>(I did not learn by speaking; I learned by listening.)</em></p>
@@ -165,4 +122,3 @@
     </footer>
 </body>
 </html>
-
