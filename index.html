@@ -37,8 +37,8 @@
             width: 100%;
             height: 100vh;
             text-align: center;
-            background: linear-gradient(rgba(255,255,255,0.78), rgba(255,255,255,0.78)), 
-                        url('https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=2565&auto=format&fit=crop') center 30% / cover;
+            background: linear-gradient(rgba(255,255,255,0.80), rgba(255,255,255,0.80)), 
+                        url('https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=2565&auto=format&fit=crop') center 33% / cover;
             margin-bottom: 40px;
             border-bottom: 1px solid var(--border);
             position: relative;
@@ -47,7 +47,7 @@
 
         .hero-content {
             position: absolute;
-            top: 48%; /* Positioned in robot's shoulders */
+            top: 52%; /* Adjusted to upper chest area */
             left: 50%;
             transform: translate(-50%, -50%);
             width: 100%;
@@ -75,7 +75,6 @@
             line-height: 1.7;
         }
 
-        /* [REST OF YOUR CSS REMAINS EXACTLY THE SAME...] */
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -95,7 +94,129 @@
             transition: all 0.3s ease;
         }
 
-        /* [CONTINUE WITH ALL YOUR OTHER EXISTING STYLES...] */
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border-color: var(--primary-light);
+        }
+
+        .card h2 {
+            font-size: 1.7rem;
+            margin-bottom: 15px;
+            color: var(--primary-dark);
+            font-weight: 600;
+            position: relative;
+        }
+
+        .card h2::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--accent);
+            border-radius: 3px;
+        }
+
+        .card p {
+            color: var(--text-light);
+            margin-bottom: 25px;
+            font-weight: 400;
+        }
+
+        button {
+            background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            cursor: pointer;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            box-shadow: 0 4px 10px rgba(36, 92, 54, 0.2);
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(36, 92, 54, 0.3);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        footer {
+            width: 100%;
+            background: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-top: 1px solid var(--border);
+        }
+
+        .quote-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .quote {
+            background: var(--light);
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid var(--accent);
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .quote:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .quote-text {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: var(--text);
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+
+        .quote-author {
+            font-family: 'Noto Sans JP', sans-serif;
+            color: var(--primary-dark);
+            font-weight: 500;
+        }
+
+        .japanese {
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: var(--primary-dark);
+            margin-bottom: 40px;
+            text-align: center;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: var(--accent);
+        }
 
         @media (max-width: 768px) {
             h1 {
@@ -107,11 +228,15 @@
             }
             
             .hero {
-                background-position: center 28%;
+                background-position: center 30%;
             }
             
             .hero-content {
-                top: 45%;
+                top: 50%;
+            }
+            
+            .grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -124,7 +249,6 @@
         </div>
     </div>
 
-    <!-- [REST OF YOUR HTML CONTENT REMAINS EXACTLY THE SAME...] -->
     <div class="grid">
         <!-- Islamic AIs first -->
         <div class="card">
@@ -133,11 +257,119 @@
             <button onclick="window.open('https://sheikhgpt.ai/', '_blank')">Open Sheikh GPT</button>
         </div>
 
-        <!-- [ALL OTHER CARDS REMAIN THE SAME...] -->
+        <div class="card">
+            <h2>Query Quran AI</h2>
+            <p>Explore the Quran with AI-powered insights and detailed explanations of verses.</p>
+            <button onclick="window.open('https://queryquran.com', '_blank')">Open Query Quran AI</button>
+        </div>
+
+        <div class="card">
+            <h2>Islam & AI</h2>
+            <p>Discover the intersection of Islamic knowledge and artificial intelligence technology.</p>
+            <button onclick="window.open('https://islamandai.com', '_blank')">Open Islam & AI</button>
+        </div>
+
+        <!-- Other AIs -->
+        <div class="card">
+            <h2>ChatGPT</h2>
+            <p>The original AI assistant that started it all. Powerful general knowledge and creative capabilities.</p>
+            <button onclick="window.open('https://chat.openai.com', '_blank')">Open ChatGPT</button>
+        </div>
+
+        <div class="card">
+            <h2>DeepSeek</h2>
+            <p>Advanced AI with powerful reasoning capabilities and up-to-date information.</p>
+            <button onclick="window.open('https://chat.deepseek.com', '_blank')">Open DeepSeek</button>
+        </div>
+
+        <div class="card">
+            <h2>Perplexity AI</h2>
+            <p>AI-powered search engine that provides accurate answers with cited sources.</p>
+            <button onclick="window.open('https://www.perplexity.ai', '_blank')">Open Perplexity AI</button>
+        </div>
+
+        <div class="card">
+            <h2>Microsoft Copilot</h2>
+            <p>Microsoft's AI assistant with web access and integration with Office products.</p>
+            <button onclick="window.open('https://www.bing.com/chat', '_blank')">Open Copilot</button>
+        </div>
+
+        <div class="card">
+            <h2>Replika</h2>
+            <p>Your personal AI companion designed for meaningful conversations and emotional connection.</p>
+            <button onclick="window.open('https://replika.ai', '_blank')">Open Replika</button>
+        </div>
+
+        <div class="card">
+            <h2>Zen GPT</h2>
+            <p>Mindfulness and wisdom from Eastern philosophy combined with AI technology.</p>
+            <button onclick="window.open('https://zengpt.com', '_blank')">Open Zen GPT</button>
+        </div>
+
+        <div class="card">
+            <h2>Samurai</h2>
+            <p>Chat with a wise Samurai warrior from Japan's feudal era (via Character.ai).</p>
+            <button onclick="window.open('https://character.ai/samurai', '_blank')">Open Samurai</button>
+        </div>
+
+        <div class="card">
+            <h2>Mansa Musa</h2>
+            <p>Converse with the legendary wealthy king of the Mali Empire (via Character.ai).</p>
+            <button onclick="window.open('https://character.ai/mansa-musa', '_blank')">Open Mansa Musa</button>
+        </div>
+
+        <div class="card">
+            <h2>Grok</h2>
+            <p>xAI's conversational AI model with real-time knowledge and a rebellious streak.</p>
+            <button onclick="window.open('https://grok.ai', '_blank')">Open Grok</button>
+        </div>
+
+        <div class="card">
+            <h2>GTA San Andreas</h2>
+            <p>Immerse yourself in the world of Grand Theft Auto through conversation (via Character.ai).</p>
+            <button onclick="window.open('https://character.ai/gta-san-andreas', '_blank')">Open GTA</button>
+        </div>
+
+        <div class="card">
+            <h2>Buddha</h2>
+            <p>Seek wisdom and enlightenment through conversation with Buddha (via Character.ai).</p>
+            <button onclick="window.open('https://character.ai/buddha', '_blank')">Open Buddha</button>
+        </div>
     </div>
 
     <footer>
-        <!-- [FOOTER CONTENT REMAINS THE SAME...] -->
+        <h3 class="section-title">Wisdom Quotes</h3>
+        <div class="quote-container">
+            <div class="quote">
+                <p class="quote-text">"Innovation distinguishes between a leader and a follower."</p>
+                <p class="quote-author">— Steve Jobs</p>
+            </div>
+            
+            <div class="quote">
+                <p class="quote-text">"七転び八起き" <span class="japanese">(Fall seven times, stand up eight)</span></p>
+                <p class="quote-author">— Japanese Proverb</p>
+            </div>
+            
+            <div class="quote">
+                <p class="quote-text">"Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work."</p>
+                <p class="quote-author">— Steve Jobs</p>
+            </div>
+            
+            <div class="quote">
+                <p class="quote-text">"猿も木から落ちる" <span class="japanese">(Even monkeys fall from trees)</span></p>
+                <p class="quote-author">— Japanese Proverb</p>
+            </div>
+            
+            <div class="quote">
+                <p class="quote-text">"Great things in business are never done by one person; they're done by a team of people."</p>
+                <p class="quote-author">— Steve Jobs</p>
+            </div>
+            
+            <div class="quote">
+                <p class="quote-text">"千里の道も一歩から" <span class="japanese">(A journey of a thousand miles begins with a single step)</span></p>
+                <p class="quote-author">— Japanese Proverb</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
