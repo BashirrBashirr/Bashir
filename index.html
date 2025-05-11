@@ -35,16 +35,17 @@
 
         .hero {
             width: 100%;
-            padding: 80px 20px 140px; /* Reduced top padding to move title up */
+            padding: 80px 20px;
             text-align: center;
-            background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), 
+            background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), 
                         url('https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=2565&auto=format&fit=crop') center center / cover;
             margin-bottom: 40px;
             border-bottom: 1px solid var(--border);
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            min-height: 40vh; /* Reduced min-height */
+            justify-content: flex-start; /* Changed to move content up */
+            min-height: 100vh;
+            padding-top: 20vh; /* Added to position content higher */
         }
 
         h1 {
@@ -220,9 +221,10 @@
             }
             
             .hero {
-                padding: 60px 20px 100px; /* Adjusted mobile padding */
+                padding: 60px 20px;
                 background-position: center center;
-                min-height: 30vh; /* Adjusted mobile min-height */
+                min-height: 100vh;
+                padding-top: 15vh; /* Adjusted for mobile */
             }
             
             .grid {
