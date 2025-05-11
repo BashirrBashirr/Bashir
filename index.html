@@ -17,6 +17,7 @@
             --light: #f9fafb;
             --border: #e5e7eb;
             --card-bg: #ffffff;
+            --title-blue: #2563eb; /* Blue for title */
         }
         
         body {
@@ -33,27 +34,26 @@
             line-height: 1.6;
         }
 
-        /* UPDATED HERO SECTION */
         .hero {
             width: 100%;
-            padding: 80px 20px 100px; /* Adjusted padding */
+            padding: 80px 20px 100px;
             text-align: center;
             background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), 
-                        url('https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=2565&auto=format&fit=crop') center 30% / cover; /* Adjusted background position */
+                        url('https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=2565&auto=format&fit=crop') center 30% / cover;
             margin-bottom: 40px;
             border-bottom: 1px solid var(--border);
         }
 
         h1 {
-            font-size: 2.8rem; /* Reduced from 4rem */
+            font-size: 2.8rem;
             margin: 0;
-            color: var(--primary-dark);
+            color: var(--title-blue); /* Blue title */
             font-weight: 700;
-            letter-spacing: -1px; /* Reduced letter spacing */
+            letter-spacing: -1px;
         }
 
         .tagline {
-            font-size: 1.2rem; /* Reduced from 1.4rem */
+            font-size: 1.2rem;
             color: var(--text-light);
             margin-top: 15px;
             font-weight: 300;
@@ -62,7 +62,6 @@
             margin-right: auto;
         }
 
-        /* REST OF THE ORIGINAL STYLES */
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -208,16 +207,16 @@
 
         @media (max-width: 768px) {
             h1 {
-                font-size: 2.2rem; /* Adjusted for mobile */
+                font-size: 2.2rem;
             }
             
             .tagline {
-                font-size: 1.1rem; /* Adjusted for mobile */
+                font-size: 1.1rem;
             }
             
             .hero {
-                padding: 60px 20px 80px; /* Adjusted for mobile */
-                background-position: center 25%; /* Adjusted for mobile */
+                padding: 60px 20px 80px;
+                background-position: center 25%;
             }
             
             .grid {
@@ -344,7 +343,7 @@
             </div>
             
             <div class="quote">
-                <p class="quote-text">"Stay hungry, stay foolish."</p>
+                <p class="quote-text">"Great things in business are never done by one person; they're done by a team of people."</p>
                 <p class="quote-author">— Steve Jobs</p>
             </div>
             
