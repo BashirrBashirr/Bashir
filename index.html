@@ -35,20 +35,20 @@
 
         .hero {
             width: 100%;
-            padding: 180px 20px 140px; /* Further increased top padding to move title down more */
+            padding: 220px 20px 140px; /* Increased top padding to move title down */
             text-align: center;
             background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), 
-                        url('https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=2565&auto=format&fit=crop') center 30% / cover;
+                        url('https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=2565&auto=format&fit=crop') center center / cover;
             margin-bottom: 40px;
             border-bottom: 1px solid var(--border);
             display: flex;
             flex-direction: column;
             justify-content: center;
-            min-height: 40vh;
+            min-height: 60vh; /* Increased min-height */
         }
 
         h1 {
-            font-size: 2.5rem; /* Reduced further from 3rem */
+            font-size: 2.5rem; /* Kept same size as last version */
             margin: 0 0 20px 0;
             color: var(--primary);
             font-weight: 700;
@@ -212,7 +212,7 @@
 
         @media (max-width: 768px) {
             h1 {
-                font-size: 2.2rem; /* Adjusted mobile size proportionally */
+                font-size: 2.2rem;
             }
             
             .tagline {
@@ -220,9 +220,9 @@
             }
             
             .hero {
-                padding: 100px 20px 100px; /* Adjusted mobile padding */
-                background-position: center 25%;
-                min-height: 30vh;
+                padding: 150px 20px 100px; /* Adjusted mobile padding */
+                background-position: center center;
+                min-height: 50vh; /* Adjusted mobile min-height */
             }
             
             .grid {
