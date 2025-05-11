@@ -4,184 +4,352 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BashirAI</title>
-    <meta name="description" content="Explore AI models. Discover insightful Amharic quotes.">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <meta name="description" content="Gateway to the most powerful AI models">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --primary: #245c36;  /* Saudi green */
+            --primary-light: #a7f3d0;
+            --primary-dark: #1e4d2b;
+            --accent: #e83f8e;  /* Pink accent instead of gold */
+            --text: #1f2937;
+            --text-light: #4b5563;
+            --light: #f9fafb;
+            --border: #e5e7eb;
+            --card-bg: #ffffff;
+        }
+        
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light);
+            color: var(--text);
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: flex-start;
             min-height: 100vh;
             margin: 0;
-            padding: 550px 20px 20px; /* Padding remains unchanged */
-            overflow-y: auto;
+            padding: 0;
+            line-height: 1.6;
         }
 
-        .container {
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-            width: 400px;
+        .hero {
+            width: 100%;
+            padding: 100px 20px;
             text-align: center;
+            background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), 
+                        url('https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=2565&auto=format&fit=crop') center/cover;
             margin-bottom: 40px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .container:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
-        }
-
-        button {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 12px 20px;
-            cursor: pointer;
-            border-radius: 8px;
-            font-size: 16px;
-            margin-top: 20px;
-            transition: background-color 0.3s ease, transform 0.2s ease;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-            transform: scale(1.05);
-        }
-
-        footer {
-            margin-top: 1100px; /* Margin remains unchanged */
-            text-align: center;
-            font-size: 14px;
-            color: #555;
-            padding: 20px 0;
+            border-bottom: 1px solid var(--border);
         }
 
         h1 {
-            margin-bottom: 550px; /* Margin remains unchanged */
-            margin-top: 0;
-            font-size: 3rem;
-            color: #007bff;
-            font-family: 'Poppins', sans-serif;
-            font-weight: 600;
-            letter-spacing: -1px;
+            font-size: 4rem;
+            margin: 0;
+            color: var(--primary-dark);
+            font-weight: 700;
+            letter-spacing: -1.5px;
         }
 
-        h2 {
+        .tagline {
+            font-size: 1.4rem;
+            color: var(--text-light);
+            margin-top: 20px;
+            font-weight: 300;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            width: 90%;
+            max-width: 1400px;
+            margin: 0 auto 80px;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border-color: var(--primary-light);
+        }
+
+        .card h2 {
+            font-size: 1.7rem;
             margin-bottom: 15px;
-            font-size: 1.8rem;
-            color: #333;
-            font-family: 'Poppins', sans-serif;
+            color: var(--primary-dark);
+            font-weight: 600;
+            position: relative;
+        }
+
+        .card h2::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--accent);
+            border-radius: 3px;
+        }
+
+        .card p {
+            color: var(--text-light);
+            margin-bottom: 25px;
+            font-weight: 400;
+        }
+
+        button {
+            background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            cursor: pointer;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            box-shadow: 0 4px 10px rgba(36, 92, 54, 0.2);
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(36, 92, 54, 0.3);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        footer {
+            width: 100%;
+            background: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-top: 1px solid var(--border);
+        }
+
+        .quote-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .quote {
+            background: var(--light);
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid var(--accent);
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .quote:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .quote-text {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: var(--text);
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+
+        .quote-author {
+            font-family: 'Noto Sans JP', sans-serif;
+            color: var(--primary-dark);
             font-weight: 500;
         }
 
-        p {
-            margin-bottom: 20px;
-            color: #555;
-            line-height: 1.6;
-            font-size: 1rem;
+        .japanese {
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: var(--primary-dark);
+            margin-bottom: 40px;
+            text-align: center;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: var(--accent);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .tagline {
+                font-size: 1.2rem;
+            }
+            
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero {
+                padding: 80px 20px;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>BashirAI</h1>
-
-    <!-- Islamic AIs first -->
-    <div class="container">
-        <h2>Sheikh GPT</h2>
-        <p>Click below to chat with Sheikh GPT for Islamic guidance.</p>
-        <button onclick="window.open('https://sheikhgpt.ai/', '_blank')">Open Sheikh GPT</button>
+    <div class="hero">
+        <h1>BashirAI</h1>
+        <p class="tagline">Your gateway to the most advanced AI models and wisdom from around the world</p>
     </div>
 
-    <div class="container">
-        <h2>Query Quran AI</h2>
-        <p>Click below to explore the Quran with AI-powered insights.</p>
-        <button onclick="window.open('https://queryquran.com', '_blank')">Open Query Quran AI</button>
+    <div class="grid">
+        <!-- Islamic AIs first -->
+        <div class="card">
+            <h2>Sheikh GPT</h2>
+            <p>Islamic guidance powered by AI. Get answers to your religious questions with authentic sources.</p>
+            <button onclick="window.open('https://sheikhgpt.ai/', '_blank')">Open Sheikh GPT</button>
+        </div>
+
+        <div class="card">
+            <h2>Query Quran AI</h2>
+            <p>Explore the Quran with AI-powered insights and detailed explanations of verses.</p>
+            <button onclick="window.open('https://queryquran.com', '_blank')">Open Query Quran AI</button>
+        </div>
+
+        <div class="card">
+            <h2>Islam & AI</h2>
+            <p>Discover the intersection of Islamic knowledge and artificial intelligence technology.</p>
+            <button onclick="window.open('https://islamandai.com', '_blank')">Open Islam & AI</button>
+        </div>
+
+        <!-- Other AIs -->
+        <div class="card">
+            <h2>ChatGPT</h2>
+            <p>The original AI assistant that started it all. Powerful general knowledge and creative capabilities.</p>
+            <button onclick="window.open('https://chat.openai.com', '_blank')">Open ChatGPT</button>
+        </div>
+
+        <div class="card">
+            <h2>DeepSeek</h2>
+            <p>Advanced AI with powerful reasoning capabilities and up-to-date information.</p>
+            <button onclick="window.open('https://chat.deepseek.com', '_blank')">Open DeepSeek</button>
+        </div>
+
+        <div class="card">
+            <h2>Perplexity AI</h2>
+            <p>AI-powered search engine that provides accurate answers with cited sources.</p>
+            <button onclick="window.open('https://www.perplexity.ai', '_blank')">Open Perplexity AI</button>
+        </div>
+
+        <div class="card">
+            <h2>Microsoft Copilot</h2>
+            <p>Microsoft's AI assistant with web access and integration with Office products.</p>
+            <button onclick="window.open('https://www.bing.com/chat', '_blank')">Open Copilot</button>
+        </div>
+
+        <div class="card">
+            <h2>Replika</h2>
+            <p>Your personal AI companion designed for meaningful conversations and emotional connection.</p>
+            <button onclick="window.open('https://replika.ai', '_blank')">Open Replika</button>
+        </div>
+
+        <div class="card">
+            <h2>Zen GPT</h2>
+            <p>Mindfulness and wisdom from Eastern philosophy combined with AI technology.</p>
+            <button onclick="window.open('https://zengpt.com', '_blank')">Open Zen GPT</button>
+        </div>
+
+        <div class="card">
+            <h2>Samurai</h2>
+            <p>Chat with a wise Samurai warrior from Japan's feudal era (via Character.ai).</p>
+            <button onclick="window.open('https://character.ai/samurai', '_blank')">Open Samurai</button>
+        </div>
+
+        <div class="card">
+            <h2>Mansa Musa</h2>
+            <p>Converse with the legendary wealthy king of the Mali Empire (via Character.ai).</p>
+            <button onclick="window.open('https://character.ai/mansa-musa', '_blank')">Open Mansa Musa</button>
+        </div>
+
+        <div class="card">
+            <h2>Grok</h2>
+            <p>xAI's conversational AI model with real-time knowledge and a rebellious streak.</p>
+            <button onclick="window.open('https://grok.ai', '_blank')">Open Grok</button>
+        </div>
+
+        <div class="card">
+            <h2>GTA San Andreas</h2>
+            <p>Immerse yourself in the world of Grand Theft Auto through conversation (via Character.ai).</p>
+            <button onclick="window.open('https://character.ai/gta-san-andreas', '_blank')">Open GTA</button>
+        </div>
+
+        <div class="card">
+            <h2>Buddha</h2>
+            <p>Seek wisdom and enlightenment through conversation with Buddha (via Character.ai).</p>
+            <button onclick="window.open('https://character.ai/buddha', '_blank')">Open Buddha</button>
+        </div>
     </div>
 
-    <div class="container">
-        <h2>Islam & AI</h2>
-        <p>Click below to explore the intersection of Islam and AI.</p>
-        <button onclick="window.open('https://islamandai.com', '_blank')">Open Islam & AI</button>
-    </div>
-
-    <!-- Other AIs -->
-    <div class="container">
-        <h2>ChatGPT Chat</h2>
-        <p>Click below to chat with ChatGPT.</p>
-        <button onclick="window.open('https://chat.openai.com', '_blank')">Open ChatGPT</button>
-    </div>
-
-    <div class="container">
-        <h2>DeepSeek Chat</h2>
-        <p>Click below to chat with DeepSeek.</p>
-        <button onclick="window.open('https://chat.deepseek.com', '_blank')">Open DeepSeek</button>
-    </div>
-
-    <div class="container">
-        <h2>Perplexity AI</h2>
-        <p>Click below to chat with Perplexity AI.</p>
-        <button onclick="window.open('https://www.perplexity.ai', '_blank')">Open Perplexity AI</button>
-    </div>
-
-    <div class="container">
-        <h2>Microsoft Copilot</h2>
-        <p>Click below to chat with Microsoft Copilot (formerly Bing Chat).</p>
-        <button onclick="window.open('https://www.bing.com/chat', '_blank')">Open Microsoft Copilot</button>
-    </div>
-
-    <div class="container">
-        <h2>Replika</h2>
-        <p>Click below to chat with Replika, your AI companion.</p>
-        <button onclick="window.open('https://replika.ai', '_blank')">Open Replika</button>
-    </div>
-
-    <div class="container">
-        <h2>Zen GPT</h2>
-        <p>Click below to chat with Zen GPT for mindfulness and wisdom.</p>
-        <button onclick="window.open('https://zengpt.com', '_blank')">Open Zen GPT</button>
-    </div>
-
-    <div class="container">
-        <h2>Samurai (Character.ai)</h2>
-        <p>Click below to chat with the Samurai character from Character.ai.</p>
-        <button onclick="window.open('https://character.ai/samurai', '_blank')">Open Samurai</button>
-    </div>
-
-    <div class="container">
-        <h2>Mansa Musa (Character.ai)</h2>
-        <p>Click below to chat with Mansa Musa from Character.ai.</p>
-        <button onclick="window.open('https://character.ai/mansa-musa', '_blank')">Open Mansa Musa</button>
-    </div>
-
-    <div class="container">
-        <h2>Grok</h2>
-        <p>Click below to chat with Grok, the AI model by xAI.</p>
-        <button onclick="window.open('https://grok.ai', '_blank')">Open Grok</button>
-    </div>
-
-    <div class="container">
-        <h2>GTA San Andreas (Character.ai)</h2>
-        <p>Click below to chat with GTA San Andreas from Character.ai.</p>
-        <button onclick="window.open('https://character.ai/gta-san-andreas', '_blank')">Open GTA San Andreas</button>
-    </div>
-
-    <div class="container">
-        <h2>Buddha (Character.ai)</h2>
-        <p>Click below to chat with Buddha from Character.ai.</p>
-        <button onclick="window.open('https://character.ai/buddha', '_blank')">Open Buddha</button>
-    </div>
-
-    <!-- Footer with corrected Amharic orthography -->
     <footer>
-        <p>ሰው ሲያወራ ይሻላል፣ ሲያድም ይሻላል።<br><em>(A person improves by speaking, but even more by listening.)</em></p>
-        <p>አንደበቴ ብዬ አልተማርሁ፣ ጆሮዬ ብዬ ተማርሁ።<br><em>(I did not learn by speaking; I learned by listening.)</em></p>
-        <p>ሰብ እንተዘይተነብር ኣይትፈልጥ።<br><em>(If you don’t live with people, you won’t understand them.)</em></p>
+        <h3 class="section-title">Wisdom Quotes</h3>
+        <div class="quote-container">
+            <div class="quote">
+                <p class="quote-text">"Innovation distinguishes between a leader and a follower."</p>
+                <p class="quote-author">— Steve Jobs</p>
+            </div>
+            
+            <div class="quote">
+                <p class="quote-text">"七転び八起き" <span class="japanese">(Fall seven times, stand up eight)</span></p>
+                <p class="quote-author">— Japanese Proverb</p>
+            </div>
+            
+            <div class="quote">
+                <p class="quote-text">"Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work."</p>
+                <p class="quote-author">— Steve Jobs</p>
+            </div>
+            
+            <div class="quote">
+                <p class="quote-text">"猿も木から落ちる" <span class="japanese">(Even monkeys fall from trees)</span></p>
+                <p class="quote-author">— Japanese Proverb</p>
+            </div>
+            
+            <div class="quote">
+                <p class="quote-text">"Stay hungry, stay foolish."</p>
+                <p class="quote-author">— Steve Jobs</p>
+            </div>
+            
+            <div class="quote">
+                <p class="quote-text">"千里の道も一歩から" <span class="japanese">(A journey of a thousand miles begins with a single step)</span></p>
+                <p class="quote-author">— Japanese Proverb</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
