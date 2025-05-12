@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -38,7 +38,7 @@
             height: 100vh;
             text-align: center;
             background: linear-gradient(rgba(255,255,255,0.80), rgba(255,255,255,0.80)), 
-                        url('https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=2565&auto=format&fit=crop') center 40% / cover;
+                        url('https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=2565&auto=format&fit=crop') center 30% / cover;
             margin-bottom: 40px;
             border-bottom: 1px solid var(--border);
             position: relative;
@@ -47,7 +47,7 @@
 
         .hero-content {
             position: absolute;
-            top: 45%; /* Higher on the chest */
+            top: 56%;
             left: 50%;
             transform: translate(-50%, -50%);
             width: 100%;
@@ -57,7 +57,7 @@
 
         h1 {
             font-size: 2.4rem;
-            margin: 0 0 15px 0;
+            margin: 0 0 8px 0;
             color: var(--primary);
             font-weight: 700;
             letter-spacing: -1.5px;
@@ -67,7 +67,7 @@
         .tagline {
             font-size: 1.2rem;
             color: var(--text-light);
-            margin-top: 10px;
+            margin-top: 4px;
             font-weight: 300;
             max-width: 700px;
             margin-left: auto;
@@ -221,18 +221,20 @@
         @media (max-width: 768px) {
             h1 {
                 font-size: 2rem;
+                margin-bottom: 6px;
             }
             
             .tagline {
                 font-size: 1.1rem;
+                margin-top: 3px;
             }
             
             .hero {
-                background-position: center 45%;
+                background-position: center 35%;
             }
             
             .hero-content {
-                top: 45%;
+                top: 56%;
             }
             
             .grid {
