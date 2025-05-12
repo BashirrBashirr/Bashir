@@ -47,9 +47,27 @@
 
         .hero-content {
             position: absolute;
-            top: 56%;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .title-container {
+            position: absolute;
+            top: 40%; /* Positioned at robot's middle chest (between clavicle and belly) */
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translateX(-50%);
+            width: 100%;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .tagline-container {
+            position: absolute;
+            top: 55%; /* Kept at robot's belly */
+            left: 50%;
+            transform: translateX(-50%);
             width: 100%;
             padding: 0 20px;
             text-align: center;
@@ -57,7 +75,7 @@
 
         h1 {
             font-size: 2.4rem;
-            margin: 0 0 15px 0; /* Increased bottom margin */
+            margin: 0;
             color: var(--primary);
             font-weight: 700;
             letter-spacing: -1.5px;
@@ -67,7 +85,7 @@
         .tagline {
             font-size: 1.2rem;
             color: var(--text-light);
-            margin-top: 10px; /* Increased top margin */
+            margin: 0;
             font-weight: 300;
             max-width: 700px;
             margin-left: auto;
@@ -221,20 +239,22 @@
         @media (max-width: 768px) {
             h1 {
                 font-size: 2rem;
-                margin-bottom: 12px;
             }
             
             .tagline {
                 font-size: 1.1rem;
-                margin-top: 8px;
             }
             
             .hero {
                 background-position: center 35%;
             }
             
-            .hero-content {
-                top: 56%;
+            .title-container {
+                top: 38%;
+            }
+            
+            .tagline-container {
+                top: 52%;
             }
             
             .grid {
@@ -246,8 +266,12 @@
 <body>
     <div class="hero">
         <div class="hero-content">
-            <h1>BashirAI</h1>
-            <p class="tagline">Your gateway to the most advanced AI models and wisdom from around the world</p>
+            <div class="title-container">
+                <h1>BashirAI</h1>
+            </div>
+            <div class="tagline-container">
+                <p class="tagline">Your gateway to the most advanced AI models and wisdom from around the world</p>
+            </div>
         </div>
     </div>
 
