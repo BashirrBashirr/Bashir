@@ -1,1 +1,1 @@
-This is my CS50 Final Project
+This is my personal website since 12/07/2025
