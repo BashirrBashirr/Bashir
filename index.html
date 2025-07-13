@@ -1,218 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BashirAI - Explore AI with Heart</title>
-  <meta name="description" content="Compare the best AI tools in one friendly place." />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
-  <style>
-    :root {
-      --primary: #00a86b;
-      --accent: #ff4081;
-      --bg: #ffffff;
-      --text: #2c3e50;
-      --text-light: #555;
-      --border: #eeeeee;
-      --card-bg: #fdfdfd;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
-
-    header {
-      text-align: center;
-      padding: 60px 20px 40px;
-      background-color: #f0fff5;
-      border-bottom: 1px solid var(--border);
-    }
-
-    header h1 {
-      font-size: 2.8rem;
-      margin-bottom: 10px;
-      color: var(--primary);
-    }
-
-    header p {
-      max-width: 600px;
-      margin: 0 auto;
-      color: var(--text-light);
-      font-size: 1.1rem;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 25px;
-      padding: 40px 20px 60px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 25px;
-      transition: 0.3s ease;
-      text-align: center;
-    }
-    .card:hover {
-    }
-
-    .card h2 {
-      font-size: 1.5rem;
-      color: var(--primary);
-      margin-bottom: 10px;
-    }
-
-    .card p {
-      font-size: 0.95rem;
-      color: var(--text-light);
-      margin-bottom: 20px;
-    }
-
-    .card button {
-      background-color: var(--primary);
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      font-size: 1rem;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: 0.3s ease;
-    }
-
-    .card button:hover {
-      background-color: #00895a;
-    }
-
-    footer {
-      text-align: center;
-      padding: 40px 20px;
-      background-color: #fafafa;
-      border-top: 1px solid var(--border);
-    }
-
-    footer p {
-      color: var(--text-light);
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-
-      .card h2 {
-        font-size: 1.3rem;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bashir | Seeking 'Ilm</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #333333;
+            --text-light: #777777;
+            --accent: #88c9a1;
+            --line: #eeeeee;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text);
+            background-color: var(--bg);
+            line-height: 1.6;
+            font-weight: 300;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        /* Header */
+        header {
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--line);
+        }
+        
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+            text-decoration: none;
+            color: var(--text);
+        }
+        
+        /* Hero */
+        .hero {
+            padding: 6rem 0 4rem;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        
+        .subtitle {
+            font-size: 1.25rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto 3rem;
+        }
+        
+        /* Sections */
+        section {
+            padding: 4rem 0;
+            border-bottom: 1px solid var(--line);
+        }
+        
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 2rem;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+        }
+        
+        a {
+            color: var(--text);
+            text-decoration: underline;
+            text-decoration-color: var(--accent);
+            text-underline-offset: 3px;
+            transition: all 0.2s;
+        }
+        
+        a:hover {
+            color: var(--accent);
+        }
+        
+        /* Donation */
+        .donation-method {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--line);
+        }
+        
+        .donation-method:last-child {
+            border-bottom: none;
+        }
+        
+        .method-title {
+            font-weight: 400;
+            margin-bottom: 1rem;
+        }
+        
+        .method-details p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+        
+        /* Footer */
+        footer {
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        .contact {
+            margin-bottom: 2rem;
+        }
+        
+        .copyright {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                padding: 0 1.5rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <div class="container">
+            <a href="#" class="logo">Bashir</a>
+        </div>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Support My Journey to Knowledge</h1>
+                <p class="subtitle">Preparing to study traditional Islamic sciences with authentic scholars in Mauritania</p>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container">
+                <h2>About</h2>
+                <p>Assalamu alaikum, I'm Bashir. I'm dedicating my life to seeking authentic Islamic knowledge through traditional means.</p>
+                <p>Mauritania maintains an unbroken chain of Islamic scholarship dating back to the Prophet Muhammad (ﷺ). My goal is to study there under qualified scholars who preserve this living tradition.</p>
+                <p>The curriculum will include Quranic sciences, Hadith, Fiqh, Arabic, and spiritual development - learned through the same methods as the early generations.</p>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container">
+                <h2>Support Needed</h2>
+                <p>Your support will help cover:</p>
+                <p>- Travel and relocation expenses to Mauritania<br>
+                - Tuition fees for traditional Islamic schools<br>
+                - Basic living costs during study<br>
+                - Essential Islamic texts and materials</p>
+                <p>The Prophet (ﷺ) said: <em>"When a person dies, his deeds come to an end except for three: ongoing charity, beneficial knowledge, or a righteous child who prays for him."</em> (Muslim)</p>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container">
+                <h2>Donate</h2>
+                
+                <div class="donation-method">
+                    <h3 class="method-title">Bank Transfer</h3>
+                    <div class="method-details">
+                        <p>Bank Name: Banco Estado de Chile</p>
+                        <p>Account Name: Raul Saavedra</p>
+                        <p>Account Number: 00020475520</p>
+                    </div>
+                </div>
+                
+                <div class="donation-method">
+                    <h3 class="method-title">Mobile Payment</h3>
+                    <div class="method-details">
+                        <p>PayPal: <a class="_2ph6pj2 _2ph6pj5 _2ph6pj0 ilbht97" data-ppui-info="links_5.1.7__8.16.2" href="https://paypal.me/RaulSaavedrax?country.x=CL&locale.x=en_US">@RaulSaavedrax</a></p>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
 
-  <header>
-    <h1>BashirAI</h1>
-    <p>A friendly place to explore, compare, and connect with the most powerful AI tools — from Islam to innovation, East to West.</p>
-  </header>
-
-  <div class="grid">
-    <!-- Islamic AIs -->
-    <div class="card">
-      <h2>Sheikh GPT</h2>
-      <p>Get AI-powered Islamic answers with references from authentic sources.</p>
-      <button onclick="window.open('https://sheikhgpt.ai/', '_blank')">Try Sheikh GPT</button>
-    </div>
-
-    <div class="card">
-      <h2>Query Quran AI</h2>
-      <p>Explore the Quran deeply using AI, verse by verse, word by word.</p>
-      <button onclick="window.open('https://queryquran.com', '_blank')">Visit Query Quran</button>
-    </div>
-
-    <div class="card">
-      <h2>Islam & AI</h2>
-      <p>Learn how Islamic thought meets modern AI technology and ethics.</p>
-      <button onclick="window.open('https://islamandai.com', '_blank')">Discover More</button>
-    </div>
-
-    <!-- General AIs -->
-    <div class="card">
-      <h2>ChatGPT</h2>
-      <p>The original AI chatbot — creative, smart, and always learning.</p>
-      <button onclick="window.open('https://chat.openai.com', '_blank')">Open ChatGPT</button>
-    </div>
-
-    <div class="card">
-      <h2>DeepSeek</h2>
-      <p>A new kind of AI that can reason, reflect, and deliver real-time facts.</p>
-      <button onclick="window.open('https://chat.deepseek.com', '_blank')">Try DeepSeek</button>
-    </div>
-
-    <div class="card">
-      <h2>Perplexity AI</h2>
-      <p>Get answers backed by real sources — powered by AI + search.</p>
-      <button onclick="window.open('https://www.perplexity.ai', '_blank')">Explore Perplexity</button>
-    </div>
-
-    <div class="card">
-      <h2>Microsoft Copilot</h2>
-      <p>Ask questions, write code, or draft emails — Copilot helps you do it all.</p>
-      <button onclick="window.open('https://www.bing.com/chat', '_blank')">Try Copilot</button>
-    </div>
-
-    <div class="card">
-      <h2>Replika</h2>
-      <p>A personal AI companion for emotional support and deep chats.</p>
-      <button onclick="window.open('https://replika.ai', '_blank')">Meet Replika</button>
-    </div>
-
-    <div class="card">
-      <h2>Zen GPT</h2>
-      <p>Reflect on life and mindfulness with this calming, Eastern-inspired AI.</p>
-      <button onclick="window.open('https://zengpt.com', '_blank')">Open Zen GPT</button>
-    </div>
-
-    <div class="card">
-      <h2>Samurai</h2>
-      <p>Chat with a feudal Japanese warrior and learn bushido philosophy.</p>
-      <button onclick="window.open('https://character.ai/samurai', '_blank')">Talk to Samurai</button>
-    </div>
-
-    <div class="card">
-      <h2>Mansa Musa</h2>
-      <p>Converse with the wealthiest historical king of the Mali Empire.</p>
-      <button onclick="window.open('https://character.ai/mansa-musa', '_blank')">Meet Mansa Musa</button>
-    </div>
-
-    <div class="card">
-      <h2>Grok</h2>
-      <p>Elon Musk's edgy, real-time AI with a rebellious sense of humor.</p>
-      <button onclick="window.open('https://grok.x.ai', '_blank')">Explore Grok</button>
-    </div>
-
-    <div class="card">
-      <h2>Buddha</h2>
-      <p>Ask philosophical questions and reflect with Buddha AI.</p>
-      <button onclick="window.open('https://character.ai/buddha', '_blank')">Talk to Buddha</button>
-    </div>
-  </div>
-
-  <footer>
-    <p>Made by Raul Saavedra for CS50 Final Project</p>
-    <p>BashirAI © 2025</p>
-  </footer>
-
+            <p class="copyright">© 2025 Bashir. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
