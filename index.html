@@ -2,10 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="DevZone - Social Media for Developers" />
+    
+    <!-- Add immediate redirect -->
+    <meta http-equiv="refresh" content="0; url=/frontend/public/index.html">
+    
     <title>DevZone - Social Media for Developers</title>
     <style>
         * {
@@ -53,6 +57,21 @@
             margin: 0 auto;
         }
         
+        .redirect-notice {
+            margin-top: 2rem;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+        
+        .redirect-notice a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        .redirect-notice a:hover {
+            text-decoration: underline;
+        }
+        
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
@@ -60,13 +79,34 @@
     </style>
 </head>
 <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root">
+    <noscript>
         <div class="loading-container">
             <div class="logo">DevZone</div>
-            <p class="loading-text">Loading developer community...</p>
-            <div class="spinner"></div>
+            <p>JavaScript is required. Please enable JavaScript to continue.</p>
+            <p><a href="/frontend/public/index.html">Click here to proceed without auto-redirect</a></p>
+        </div>
+    </noscript>
+    
+    <div class="loading-container">
+        <div class="logo">DevZone</div>
+        <p class="loading-text">Redirecting to frontend application...</p>
+        <div class="spinner"></div>
+        
+        <div class="redirect-notice">
+            If you are not redirected automatically, 
+            <a href="/frontend/public/index.html">click here to go to the frontend</a>
         </div>
     </div>
+    
+    <!-- Fallback JavaScript redirect -->
+    <script>
+        // Immediate redirect
+        window.location.href = '/frontend/public/index.html';
+        
+        // Fallback after 3 seconds
+        setTimeout(function() {
+            window.location.href = '/frontend/public/index.html';
+        }, 3000);
+    </script>
 </body>
 </html>
